@@ -14,14 +14,55 @@ export const User = sequelize.define<UserInstance>("User,",{
         primaryKey: true,
         type:DataTypes.INTEGER
     },
-    name: {
+    nome: {
         type:DataTypes.STRING
     },
-    age:{
+    data:{
+        type:DataTypes.INTEGER,
+    },
+    endereco:{
+        type:DataTypes.STRING,
+    },
+    bairro:{
+        type:DataTypes.STRING
+    },
+    cidade:{
+        type:DataTypes.STRING
+    },
+    estado:{
+        type:DataTypes.STRING
+    },
+    cep:{
+        type:DataTypes.INTEGER
+    },
+    tel_res:{
+        type:DataTypes.INTEGER
+    },
+    tel:{
+        type:DataTypes.INTEGER
+    },
+    tel_emergencia:{
+        type:DataTypes.INTEGER
+    },
+    contato:{
+        type:DataTypes.INTEGER
+    },
+    data_nasc:{
         type:DataTypes.INTEGER,
         defaultValue: 18
     },
+    profissao:{
+        type:DataTypes.STRING
+    },
+    email:{
+        type:DataTypes.STRING
+    },
+    sexo:{
+        type:DataTypes.STRING
+    }
+
+
 },{
-    tableName: 'users',
+    tableName: 'dados_pessoais',
     timestamps: false
 })
