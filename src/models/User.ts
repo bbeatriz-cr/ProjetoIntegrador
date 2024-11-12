@@ -8,7 +8,7 @@ export interface UserInstance extends Model {
     age:number
 }
 //ensinando o sequelize sobre as infos do nosso banco
-export const User = sequelize.define<UserInstance>("User,",{
+export const User = sequelize.define<UserInstance>("dados_pessoais,",{
 
     id:{
         primaryKey: true,
