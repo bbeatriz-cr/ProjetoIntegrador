@@ -10,6 +10,8 @@ export const home = async (req: Request, res: Response)=>{
     let nome: string
     let data: number
     let endereco: string
+    let numero: number
+    let complemento: string
     let bairro: string
     let cidade: string
     let estado: string
@@ -22,5 +24,25 @@ export const home = async (req: Request, res: Response)=>{
     let profissao: string
     let email: string
     let sexo: string
+
+    let queixa_principal: string
+    let costuma_podo: BigIntToLocaleStringOptions
+    let frequencia_podo: string
+    let medicamento: string
+    let alergico: BigIntToLocaleStringOptions
+    let substancias: string
+    let posicao: string
+    let tempo: string
+    let calcado: string
+    let tipo_calc: string
+    let palmilha: BigIntToLocaleStringOptions
+    let fumante: BigIntToLocaleStringOptions
+    let at_fisica: BigIntToLocaleStringOptions
+    let ciclo_menstrual: BigIntToLocaleStringOptions
+    let gestante: BigIntToLocaleStringOptions
+    let dum: string
+    let amamentando: BigIntToLocaleStringOptions
+    let cpf: string
+
 };
 
